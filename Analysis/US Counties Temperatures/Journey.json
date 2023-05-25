@@ -64,6 +64,49 @@
           }
         }
       }
+    },
+    {
+      "id": "G0dWmCxZiguAesyugBRD8J",
+      "transform": "FILTER",
+      "params": {
+        "mode": "in",
+        "rows": "county_name NOT NULL"
+      }
+    },
+    {
+      "id": "nEnfFSf9flECbDiFHIv0TP",
+      "transform": "REPLACE",
+      "params": {
+        "column": {
+          "column": "avg_temperature",
+          "name": null,
+          "datatype": null,
+          "move": {
+            "method": null,
+            "reference": null,
+            "position": null
+          }
+        },
+        "expression": "avg_temperature/10"
+      }
+    },
+    {
+      "id": "qDx71t9UyNeJuK3UH5ZEB5",
+      "transform": "GROUPBY",
+      "params": {
+        "dimensions": [
+          "county_name",
+          "year"
+        ],
+        "measures": [
+          {
+            "column": "avg_temperature",
+            "aggregation": "mean",
+            "name": "Avg Temperature",
+            "datatype": null
+          }
+        ]
+      }
     }
   ],
   "boundaries": {

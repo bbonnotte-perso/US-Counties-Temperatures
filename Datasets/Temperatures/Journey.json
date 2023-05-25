@@ -3,7 +3,7 @@
   "parameters": [],
   "recipe": [
     {
-      "id": "n8IUP7KRBEJP0Bpv7zKbRI",
+      "id": "dJ6yf570fi9FIaHIE25QlD",
       "transform": "IMPORT",
       "params": {
         "type": "catalog",
@@ -77,10 +77,10 @@
           },
           "target": {
             "tablePrefix": "temperatures",
-            "tableUuid": "d4zggjc9vgtgnb408gx7gu",
+            "tableUuid": "ho2qt42b50tlig0sh0eoqz",
             "database": "bbo-playground-structured-catalog",
             "location": "s3://bbo-playground-structured-bucket/",
-            "table": "temperatures_d4zggjc9vgtgnb408gx7gu",
+            "table": "temperatures_ho2qt42b50tlig0sh0eoqz",
             "schema": {
               "columns": [
                 {
@@ -92,15 +92,15 @@
                 {
                   "id": "date",
                   "header": "DATE",
-                  "name": "DATE",
+                  "name": "Date",
                   "datatype": "date",
                   "options": {},
                   "expression": "strptime(date, '%Y%m%d')"
                 },
                 {
-                  "id": "data_value",
+                  "id": "avg_temperature",
                   "header": "DATA_VALUE",
-                  "name": "DATA VALUE",
+                  "name": "Avg Temperature",
                   "datatype": "integer",
                   "options": {
                     "displayFormat": "0,0"
@@ -161,27 +161,20 @@
         },
         "reference": {
           "database": "bbo-playground-structured-catalog",
-          "table": "temperatures_d4zggjc9vgtgnb408gx7gu"
-        },
-        "configure": {
-          "date": {
-            "name": "Date"
-          },
-          "data_value": {
-            "name": "Avg Temperature"
-          }
+          "table": "temperatures_ho2qt42b50tlig0sh0eoqz"
         },
         "selection": {
           "columns": [
-            "id",
+            "avg_temperature",
             "date",
-            "data_value"
+            "id",
+            "year"
           ]
         }
       }
     },
     {
-      "id": "A8iaxPPqoKEeGFnEFTARvU",
+      "id": "yoMR8wT69vpAiYMsVMZ33y",
       "transform": "VIEW"
     }
   ],
