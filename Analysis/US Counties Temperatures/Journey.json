@@ -32,6 +32,21 @@
             "newId": null
           },
           {
+            "foreignId": "state",
+            "newName": null,
+            "newId": null
+          },
+          {
+            "foreignId": "state_name",
+            "newName": null,
+            "newId": null
+          },
+          {
+            "foreignId": "state_abbr",
+            "newName": null,
+            "newId": null
+          },
+          {
             "foreignId": "county_name",
             "newName": null,
             "newId": null
@@ -63,6 +78,30 @@
             "position": null
           }
         }
+      }
+    },
+    {
+      "id": "X5hDhfHM1tbcohajosZRr0",
+      "transform": "CONFIGURE",
+      "params": {
+        "column": {
+          "column": "year",
+          "name": null,
+          "datatype": null,
+          "move": {
+            "method": "after",
+            "reference": "station_name",
+            "position": null
+          }
+        }
+      }
+    },
+    {
+      "id": "cHr9eh6ejRScVorSXR8Arz",
+      "transform": "FILTER",
+      "params": {
+        "mode": "in",
+        "rows": "state == state_abbr"
       }
     },
     {
