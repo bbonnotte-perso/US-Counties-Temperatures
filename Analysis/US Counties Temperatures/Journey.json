@@ -48,6 +48,22 @@
           }
         ]
       }
+    },
+    {
+      "id": "HiAAFMhnRP8igqyXgjBnyI",
+      "transform": "CONFIGURE",
+      "params": {
+        "column": {
+          "column": "station_name",
+          "name": null,
+          "datatype": null,
+          "move": {
+            "method": "after",
+            "reference": "id",
+            "position": null
+          }
+        }
+      }
     }
   ],
   "boundaries": {
