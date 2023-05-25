@@ -2,5 +2,12 @@
   "schemaVersion": 13,
   "id": "ZpKZZTIgPSiKy1Zxu8e4Ks",
   "icon": "mdi-table-eye",
-  "color": "#E15758"
+  "color": "#E15758",
+  "pages": [
+    {
+      "type": "journey",
+      "id": "Z11PQZ0eW55dNF1Z8MqFuN",
+      "name": "Temperatures"
+    }
+  ]
 }

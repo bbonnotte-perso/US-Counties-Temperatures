@@ -401,8 +401,20 @@
             "params": {
               "reference": "state_fips"
             }
+          },
+          {
+            "column": "county_name",
+            "method": "after",
+            "params": {
+              "reference": "state_fips"
+            }
           }
-        ]
+        ],
+        "configure": {
+          "fips": {
+            "name": "Full FIPS"
+          }
+        }
       }
     },
     {

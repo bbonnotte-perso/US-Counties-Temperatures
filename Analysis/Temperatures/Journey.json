@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 13,
+  "icon": "mdi-table-multiple",
+  "color": "#4E79A8",
+  "parameters": [],
+  "recipe": [
+    {
+      "id": "fBBzrqjL452NnEVLUoez19",
+      "transform": "IMPORT",
+      "params": {
+        "type": "journey",
+        "reference": {
+          "workfolderName": "Datasets",
+          "journeyName": "Temperatures"
+        }
+      }
+    },
+    {
+      "id": "PKTlgGvAcH4kyRnz6dBmJJ",
+      "transform": "JOIN",
+      "params": {
+        "foreign_table": {
+          "workfolderName": "Datasets",
+          "journeyName": "Stations"
+        },
+        "primary_key": "id",
+        "foreign_key": "id",
+        "columns": [
+          {
+            "foreignId": "station_name",
+            "newName": null,
+            "newId": null
+          },
+          {
+            "foreignId": "county_name",
+            "newName": null,
+            "newId": null
+          },
+          {
+            "foreignId": "county_fips",
+            "newName": null,
+            "newId": null
+          },
+          {
+            "foreignId": "fips",
+            "newName": null,
+            "newId": null
+          }
+        ]
+      }
+    }
+  ],
+  "boundaries": {
+    "server": null
+  }
+}
