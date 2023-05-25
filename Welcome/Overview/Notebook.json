@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 13,
+  "icon": "mdi-presentation",
+  "color": "#958D89",
+  "blocks": [
+    {
+      "id": "rcimSTtpvU7atez6gec7lI",
+      "lang": "markdown"
+    }
+  ]
+}

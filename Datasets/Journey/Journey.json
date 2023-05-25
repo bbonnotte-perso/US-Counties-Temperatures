@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 13,
+  "icon": "mdi-table-multiple",
+  "color": "#4E79A8",
+  "parameters": [],
+  "recipe": [
+    {
+      "id": "TUyt6Dp7IvAcUcQcRywDU1",
+      "transform": "IMPORT",
+      "params": {
+        "type": "catalog",
+        "structuring": {
+          "source": {
+            "type": "objectStore",
+            "uri": "s3://bbo-playground-unstructured-bucket/GHCN_PARQUET_HIVE/",
+            "schema": {
+              "columns": [
+                {
+                  "header": "ID",
+                  "name": "ID",
+                  "datatype": "identifier"
+                },
+                {
+                  "header": "DATE",
+                  "name": "DATE",
+                  "datatype": "string",
+                  "options": {}
+                },
+                {
+                  "header": "DATA_VALUE",
+                  "name": "DATA VALUE",
+                  "datatype": "integer",
+                  "options": {
+                    "displayFormat": "0,0"
+                  }
+                },
+                {
+                  "header": "M_FLAG",
+                  "name": "M FLAG",
+                  "datatype": "category"
+                },
+                {
+                  "header": "Q_FLAG",
+                  "name": "Q FLAG",
+                  "datatype": "string"
+                },
+                {
+                  "header": "S_FLAG",
+                  "name": "S FLAG",
+                  "datatype": "category"
+                },
+                {
+                  "header": "OBS_TIME",
+                  "name": "OBS TIME",
+                  "datatype": "string"
+                },
+                {
+                  "header": "file",
+                  "name": "File",
+                  "datatype": "category",
+                  "options": {}
+                },
+                {
+                  "header": "year",
+                  "name": "Year",
+                  "datatype": "category",
+                  "options": {}
+                }
+              ],
+              "markers": {}
+            },
+            "params": {
+              "format": "parquet"
+            },
+            "cache": {
+              "previewUri": "s3://bbo-playground-unstructured-bucket/GHCN_PARQUET_HIVE/year=2012/file=1/data.parquet",
+              "discoveryHash": -1181601282
+            }
+          },
+          "target": {
+            "tablePrefix": "",
+            "tableUuid": "ymnxmh0wntngv8m5t2glxm",
+            "database": "rcs_main",
+            "location": "s3://rcs-main/",
+            "table": "_ymnxmh0wntngv8m5t2glxm",
+            "schema": {
+              "columns": [
+                {
+                  "id": "id",
+                  "header": "ID",
+                  "name": "ID",
+                  "datatype": "identifier"
+                },
+                {
+                  "id": "date",
+                  "header": "DATE",
+                  "name": "DATE",
+                  "datatype": "string",
+                  "options": {}
+                },
+                {
+                  "id": "data_value",
+                  "header": "DATA_VALUE",
+                  "name": "DATA VALUE",
+                  "datatype": "integer",
+                  "options": {
+                    "displayFormat": "0,0"
+                  }
+                },
+                {
+                  "id": "m_flag",
+                  "header": "M_FLAG",
+                  "name": "M FLAG",
+                  "datatype": "category"
+                },
+                {
+                  "id": "q_flag",
+                  "header": "Q_FLAG",
+                  "name": "Q FLAG",
+                  "datatype": "string"
+                },
+                {
+                  "id": "s_flag",
+                  "header": "S_FLAG",
+                  "name": "S FLAG",
+                  "datatype": "category"
+                },
+                {
+                  "id": "obs_time",
+                  "header": "OBS_TIME",
+                  "name": "OBS TIME",
+                  "datatype": "string"
+                },
+                {
+                  "id": "file",
+                  "header": "file",
+                  "name": "File",
+                  "datatype": "category",
+                  "options": {}
+                },
+                {
+                  "id": "year",
+                  "header": "year",
+                  "name": "Year",
+                  "datatype": "category",
+                  "options": {}
+                }
+              ],
+              "markers": {}
+            },
+            "partitioning": {
+              "method": "files"
+            },
+            "properties": {
+              "name": ""
+            }
+          }
+        }
+      }
+    }
+  ],
+  "boundaries": {
+    "server": null
+  }
+}

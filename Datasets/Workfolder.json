@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 13,
+  "id": "Y1uqlxabna9ixYvpLsxGno",
+  "icon": "mdi-table-multiple",
+  "color": "#4E79A8",
+  "pages": [
+    {
+      "type": "journey",
+      "id": "qGBfhAZq9FuhfodvrMtiLF",
+      "name": "Journey"
+    }
+  ]
+}

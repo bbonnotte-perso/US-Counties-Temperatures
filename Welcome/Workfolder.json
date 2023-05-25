@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 13,
+  "id": "TP21twfWzJzetT4OB0s8aQ",
+  "icon": "mdi-human-greeting-variant",
+  "color": "#958D89",
+  "pages": [
+    {
+      "type": "notebook",
+      "id": "ThGQbwhSg8aa4Sc1WUZfVd",
+      "name": "Overview"
+    },
+    {
+      "type": "notebook",
+      "id": "riEHXuI6zFMMUVOt7HhIVO",
+      "name": "Methodology"
+    }
+  ]
+}

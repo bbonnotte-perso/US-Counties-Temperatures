@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 13,
+  "icon": "mdi-information-outline",
+  "color": "#958D89",
+  "blocks": [
+    {
+      "id": "qoRpRpqdQNMhfh27hig95l",
+      "lang": "markdown"
+    },
+    {
+      "id": "cdrKCnSilpAjSdrscbHuNp",
+      "lang": "markdown"
+    }
+  ]
+}
