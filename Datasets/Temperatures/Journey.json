@@ -170,7 +170,16 @@
             "id",
             "year"
           ]
-        }
+        },
+        "move": [
+          {
+            "column": "year",
+            "method": "after",
+            "params": {
+              "reference": "id"
+            }
+          }
+        ]
       }
     },
     {
