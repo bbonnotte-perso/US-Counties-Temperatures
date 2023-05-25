@@ -8,9 +8,9 @@ This notebook outlines the methodology used to synthesize tables.
 
 The dataset is made of the following tables:
 
-- **Temperatures** — Average Temperatures between 2012 and 2022.  
+- **Temperatures** — Average Temperatures between 2012 and 2022 in the US.  
 Unit: tenths of degrees C 
-- **Stations** — Weather stations by counties. 
+- **Stations** — Weather stations by US counties. 
 
 
 [Source: NOAA GHCN Database](https://noaa-ghcn-pds.s3.amazonaws.com/index.html)
