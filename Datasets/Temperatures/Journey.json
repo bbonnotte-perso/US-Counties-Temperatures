@@ -168,7 +168,7 @@
             "name": "Date"
           },
           "data_value": {
-            "name": "Average Temperature"
+            "name": "Avg Temperature"
           }
         },
         "selection": {
@@ -179,6 +179,10 @@
           ]
         }
       }
+    },
+    {
+      "id": "A8iaxPPqoKEeGFnEFTARvU",
+      "transform": "VIEW"
     }
   ],
   "boundaries": {

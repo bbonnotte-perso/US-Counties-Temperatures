@@ -8,6 +8,11 @@
       "type": "journey",
       "id": "T9iCxgP7ujZrw30opMkSof",
       "name": "Temperatures"
+    },
+    {
+      "type": "journey",
+      "id": "CohOmMynM5PHsXhkNAMRih",
+      "name": "Stations"
     }
   ]
 }
