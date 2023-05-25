@@ -170,6 +170,13 @@
           "data_value": {
             "name": "Average Temperature"
           }
+        },
+        "selection": {
+          "columns": [
+            "id",
+            "date",
+            "data_value"
+          ]
         }
       }
     }
